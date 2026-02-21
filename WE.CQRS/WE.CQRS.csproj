@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<!-- Branding & NuGet -->
+		<PackageId>WE.CQRS</PackageId>
+		<!-- This is what shows on NuGet.org -->
+		<Version>1.0.0-preview1</Version>
+		<Authors>WE</Authors>
+		<!-- Or your name/org if you want credit -->
+		<Company>WE</Company>
+		<Description>Minimal CQRS with MediatR - register in one line, scan handlers automatically</Description>
+		<PackageTags>cqrs;mediatr;dotnet;aspnetcore;we</PackageTags>
+		<RepositoryUrl>https://github.com/shivareddy1240/WEDotNetSuite</RepositoryUrl>
+		<!-- Update to your repo -->
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<NoWarn>$(NoWarn);CS1591</NoWarn>
+	</PropertyGroup>
+
+	<!-- Dependencies (example for CQRS) -->
+	<ItemGroup>
+		<PackageReference Include="MediatR" Version="14.0.0" />
+		<PackageReference Include="FluentValidation" Version="11.10.0" />
+		<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.10.0" />
+	</ItemGroup>
+</Project>
