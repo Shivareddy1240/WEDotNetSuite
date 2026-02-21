@@ -15,7 +15,7 @@ public static class ModelBuilderExtensions
     private static readonly Regex SnakeCaseRegex = new Regex("(?<!^)([A-Z][a-z0-9]|(?<=[a-z0-9])[A-Z])", RegexOptions.Compiled);
 
     /// <summary>
-    /// Applies snake_case naming to tables/columns, UTC DateTime handling, and auto query filters for soft-delete & multi-tenancy.
+    /// Applies snake_case naming to tables/columns, UTC DateTime handling, and auto query filters for soft-delete and multi-tenancy.
     /// Call this in your DbContext OnModelCreating method.
     /// </summary>
     public static ModelBuilder ApplyWEConventions(this ModelBuilder modelBuilder, ITenantAccessor? tenantAccessor = null)
